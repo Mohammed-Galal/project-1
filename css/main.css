@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+* {
+    margin: auto;
+}
+
+html{
+    font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+    line-height: 1.5;
+    letter-spacing: .4px;
+    scroll-behavior: smooth;
+    transition: 1s;
+    -webkit-tap-highlight-color: #0000;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-transform: capitalize;
+}
+
+.btn{
+    text-transform: uppercase;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.nav-link{
+    font-size: 16px;
+
+}
+.nav-item.active .nav-link{
+    color: #f4623a !important;
+}
+
+body>header{
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../img/bg-masthead.jpg);;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1.head{
+    font-size: 65px;
+}
+
+.divider{
+    border: none;
+    background: #f4623a;
+    width: 20%;
+    height: 3px;
+}
+
+.adjust-m{
+    margin-top: 25vh
+}
+
+header .btn
+{
+    background: #f4623a;
+}
+header .btn:focus{
+    box-shadow: 0px 0px 1px 3px #f4623a7c;
+}
+
+#about{
+    background: #f4623a;
+}
+#about,#services{
+    min-height: 91vh;
+}
+
+#about .divider{
+    background: #fff;
+}
+
+#about .btn{
+    color: #f4623a !important;
+}
+
+#about .btn:focus{
+    box-shadow: 0px 0px 1px 3px #ffffff4b;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption.overlay{
+    position: absolute;
+    background: #0006;
+    left:0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#portfolio>.row>*:hover .caption.overlay{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+#contact{
+    background: #343a40;
+}
+.navbar{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.navbar.bg-dark{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
