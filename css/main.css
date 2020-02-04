@@ -72,9 +72,9 @@ body>header{
     font-size: 65px;
 }
 
-/* #home{
-    min-height: 100vh
-} */
+#home{
+    height: 100vh
+}
 
 .divider{
     border: none;
