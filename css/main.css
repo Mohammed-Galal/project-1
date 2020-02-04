@@ -4,6 +4,19 @@
     margin: auto;
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(blue, dodgerblue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 html{
     font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
     line-height: 1.5;
@@ -15,6 +28,8 @@ html{
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
+    margin:0;
+    padding: 0;
 }
 
 body {
@@ -46,8 +61,9 @@ a{
 body>header{
     min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../img/bg-masthead.jpg);;
+    background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../img/bg-masthead.jpg);
     background-position: top center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -77,9 +93,12 @@ header .btn:focus{
 
 #about{
     background: #f4623a;
+    mix-blend-mode: screen;
 }
+
 #about,#services{
     min-height: 91vh;
+    width: 100vw !important
 }
 
 #about .divider{
