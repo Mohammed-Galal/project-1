@@ -2,10 +2,13 @@
 
 * {
     margin: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -33,7 +36,7 @@ html{
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     margin: 0;
     padding: 0;
 }
@@ -59,17 +62,18 @@ a{
 }
 
 body>header{
-    min-height: 100vh;
-    width: 100vw;
     background: linear-gradient(to bottom,rgba(92,77,66,.8) 0,rgba(92,77,66,.8) 100%),url(../img/bg-masthead.jpg);
-    background-position: top center;
-    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .h1.head{
     font-size: 65px;
+}
+
+#home{
+    min-height: 100vh
 }
 
 .divider{
@@ -93,12 +97,10 @@ header .btn:focus{
 
 #about{
     background: #f4623a;
-    mix-blend-mode: screen;
 }
 
 #about,#services{
     min-height: 91vh;
-    width: 100vw !important
 }
 
 #about .divider{
@@ -159,4 +161,5 @@ img {
 }
 .navbar.bg-dark{
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    top: 0 !important;
 }
